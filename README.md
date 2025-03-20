@@ -19,3 +19,10 @@ Para iniciar o servidor, execute os seguintes comandos no terminal:
 
 ## Realizando uma nova inferência
 Caso queira realizar uma nova inferência para testes, exclua o arquivo resultados_inferencia.json que está dentro da pasta /api
+
+## Imagens do Dashboard
+
+<p align="center">
+  <img src="imgs/img_api_1.png" width="45%">
+  <img src="imgs/img_api_2.png" width="45%">
+</p>
