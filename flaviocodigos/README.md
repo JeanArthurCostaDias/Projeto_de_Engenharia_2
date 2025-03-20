@@ -1,14 +1,14 @@
 # Como Usar o Aplicativo
 
-Abrir o App: Inicie o aplicativo no seu dispositivo ou emulador.
+- Abrir o App: Inicie o aplicativo no seu dispositivo ou emulador.
 
 ## Capturar Imagem:
 
-Pressione o botão "Tirar Foto" para abrir a câmera.
+- Pressione o botão "Tirar Foto" para abrir a câmera.
 
-Pressione o botão "Escolher da Galeria" para selecionar uma imagem.
+- Pressione o botão "Escolher da Galeria" para selecionar uma imagem.
 
-Permissões: Dê permissão para acessar a câmera e a localização do dispositivo.
+- Permissões: Dê permissão para acessar a câmera e a localização do dispositivo.
 
 ## Visualizar as Imagens:
 
