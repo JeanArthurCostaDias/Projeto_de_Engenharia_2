@@ -1,0 +1,10 @@
+<resources>
+    <!-- Defina o app_name se necessário -->
+    <string name="app_name">Flavio Codigos</string>
+
+    <!-- Adicione o web_client_id do Firebase -->
+    <!-- Este valor pode ser obtido no Firebase Console quando você configurar a autenticação ou o SDK do Firebase -->
+    <string name="default_web_client_id">753401673034-i9j1kbo3cckna9lvatvc4fpmb4p15dc4.apps.googleusercontent.com</string>
+
+
+</resources>
