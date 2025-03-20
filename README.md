@@ -13,3 +13,4 @@ Alunos:
 - [ ] Introdução (Contextualização)
 - [ ] Métodos usados (Linguagens de programação, bibliotecas, frameworks,...)
 - [ ] Imagens da API e do APP
+- [ ] Referências Bibliográficas (Link do Dataset + Citação e Yolov11)
