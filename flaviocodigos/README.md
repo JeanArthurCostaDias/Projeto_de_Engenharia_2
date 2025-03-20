@@ -12,22 +12,22 @@
 
 ## Visualizar as Imagens:
 
-As imagens capturadas aparecerão em uma lista vertical.
+- As imagens capturadas aparecerão em uma lista vertical.
 
-Toque em uma imagem para ver os detalhes e a localização onde foi tirada.
+- Toque em uma imagem para ver os detalhes e a localização onde foi tirada.
 
-Remover Imagem: Pressione o ícone de "X" vermelho na imagem para removê-la.
+- Remover Imagem: Pressione o ícone de "X" vermelho na imagem para removê-la.
 
 ## Fazer Upload:
 
-Pressione "Upload Todas Imagens" para enviar todas as fotos ao Firebase.
+- Pressione "Upload Todas Imagens" para enviar todas as fotos ao Firebase.
 
-A URL da imagem e a localização serão armazenadas no Firestore.
+- A URL da imagem e a localização serão armazenadas no Firestore.
 
 ## Notas Importantes
 
-Certifique-se de que seu dispositivo tem conexão com a internet para o upload das imagens.
+- Certifique-se de que seu dispositivo tem conexão com a internet para o upload das imagens.
 
-O app requer permissão para acessar a localização e os arquivos do dispositivo.
+- O app requer permissão para acessar a localização e os arquivos do dispositivo.
 
-Caso a localização não seja obtida, a imagem ainda será salva, mas sem coordenadas geográficas.
+- Caso a localização não seja obtida, a imagem ainda será salva, mas sem coordenadas geográficas.
