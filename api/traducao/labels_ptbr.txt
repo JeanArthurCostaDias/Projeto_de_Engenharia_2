@@ -1,0 +1,60 @@
+0 - Papel Alumínio
+1 - Bateria
+2 - Blister de Alumínio
+3 - Blister em Cartão
+4 - Outra Garrafa Plástica
+5 - Garrafa Plástica Transparente
+6 - Garrafa de Vidro
+7 - Tampa de Garrafa Plástica
+8 - Tampa de Garrafa de Metal
+9 - Vidro Quebrado
+10 - Lata de Alimento
+11 - Aerossol
+12 - Lata de Bebida
+13 - Tubo de Papel Higiênico
+14 - Outro Papelão
+15 - Papelão de Ovos
+16 - Papelão de Bebida
+17 - Papelão ondulado
+18 - Papelão de Refeição
+19 - Caixa de Pizza
+20 - Copo de Papel
+21 - Copo Plástico Descartável
+22 - Copo de Espuma
+23 - Copo de Vidro
+24 - Outro Copo Plástico
+25 - Resíduos Alimentares
+26 - Pote de Vidro
+27 - Tampa Plástica
+28 - Tampa de Metal
+29 - Outro Plástico
+30 - Papel de Revista
+31 - Lenços
+32 - Papel de Embrulho
+33 - Papel Normal
+34 - Sacola de Papel
+35 - Sacola de Papel Plastificado
+36 - Filme Plástico
+37 - Argolas de Seis Packs
+38 - Saco de Lixo
+39 - Outro Embrulho Plástico
+40 - Sacola de Uso Único
+41 - Sacola de Polipropileno
+42 - Pacote de Batata Chips
+43 - Pote de Margarina
+44 - Tupperware
+45 - Recipiente de Alimento Descartável
+46 - Recipiente de Alimento de Espuma
+47 - Outro Recipiente Plástico
+48 - Luvas Plásticas
+49 - Utensílios Plásticos
+50 - Pino de Lata
+51 - Cordas e Fios
+52 - Sucata de Metal
+53 - Sapato
+54 - Tubo Squeezable
+55 - Canudo Plástico
+56 - Canudo de Papel
+57 - Peça de Isopor
+58 - Lixo Sem Rótulo
+59 - Cigarro

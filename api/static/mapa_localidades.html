@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0c9b97578936234ae903368ee1de0089 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0c9b97578936234ae903368ee1de0089" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0c9b97578936234ae903368ee1de0089 = L.map(
+                "map_0c9b97578936234ae903368ee1de0089",
+                {
+                    center: [-1.45502, -48.5024],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_81ac279cef13690630e56ea36362674e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_81ac279cef13690630e56ea36362674e.addTo(map_0c9b97578936234ae903368ee1de0089);
+        
+    
+            var marker_58b45154e18c1ab80409396a2e8a9e6b = L.marker(
+                [-1.4678892, -48.4580895],
+                {
+}
+            ).addTo(map_0c9b97578936234ae903368ee1de0089);
+        
+    
+        var popup_1a36d5ba61481ac05a81d9ab95dfa7ef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6edd09828e2968923e7846e6b8f1c6e6 = $(`<div id="html_6edd09828e2968923e7846e6b8f1c6e6" style="width: 100.0%; height: 100.0%;">Tipo de Lixo Detectado: Lata de Bebida</div>`)[0];
+                popup_1a36d5ba61481ac05a81d9ab95dfa7ef.setContent(html_6edd09828e2968923e7846e6b8f1c6e6);
+            
+        
+
+        marker_58b45154e18c1ab80409396a2e8a9e6b.bindPopup(popup_1a36d5ba61481ac05a81d9ab95dfa7ef)
+        ;
+
+        
+    
+    
+            var marker_08e8c03e45f8f76e20d4806f3f6b32fb = L.marker(
+                [-1.4678892, -48.4580895],
+                {
+}
+            ).addTo(map_0c9b97578936234ae903368ee1de0089);
+        
+    
+        var popup_4180dacc7d89729c6103babb8c584f1b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_14f7f37c4672bfb1a6409ffc848118e4 = $(`<div id="html_14f7f37c4672bfb1a6409ffc848118e4" style="width: 100.0%; height: 100.0%;">Tipo de Lixo Detectado: Garrafa Plástica Transparente</div>`)[0];
+                popup_4180dacc7d89729c6103babb8c584f1b.setContent(html_14f7f37c4672bfb1a6409ffc848118e4);
+            
+        
+
+        marker_08e8c03e45f8f76e20d4806f3f6b32fb.bindPopup(popup_4180dacc7d89729c6103babb8c584f1b)
+        ;
+
+        
+    
+    
+            var marker_ce2c07c98cddbf3d8c8e64c832c31108 = L.marker(
+                [-1.4678892, -48.4580895],
+                {
+}
+            ).addTo(map_0c9b97578936234ae903368ee1de0089);
+        
+    
+        var popup_5b89720e5f9d0a274d60626da853e7ef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a8260afd834add510611c06a6ad2af5c = $(`<div id="html_a8260afd834add510611c06a6ad2af5c" style="width: 100.0%; height: 100.0%;">Tipo de Lixo Detectado: Tampa de Garrafa Plástica</div>`)[0];
+                popup_5b89720e5f9d0a274d60626da853e7ef.setContent(html_a8260afd834add510611c06a6ad2af5c);
+            
+        
+
+        marker_ce2c07c98cddbf3d8c8e64c832c31108.bindPopup(popup_5b89720e5f9d0a274d60626da853e7ef)
+        ;
+
+        
+    
+    
+            var marker_de6601f6a286b841089044216745247a = L.marker(
+                [-1.4678892, -48.4580895],
+                {
+}
+            ).addTo(map_0c9b97578936234ae903368ee1de0089);
+        
+    
+        var popup_63a75a99724d7586e2c3c142895657a6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_866b926a7d4bd5063e5d2e6fa413e3c2 = $(`<div id="html_866b926a7d4bd5063e5d2e6fa413e3c2" style="width: 100.0%; height: 100.0%;">Tipo de Lixo Detectado: Tampa de Garrafa Plástica</div>`)[0];
+                popup_63a75a99724d7586e2c3c142895657a6.setContent(html_866b926a7d4bd5063e5d2e6fa413e3c2);
+            
+        
+
+        marker_de6601f6a286b841089044216745247a.bindPopup(popup_63a75a99724d7586e2c3c142895657a6)
+        ;
+
+        
+    
+    
+            var marker_350c288ff6941974318e8e802ce078b5 = L.marker(
+                [-1.4678892, -48.4580895],
+                {
+}
+            ).addTo(map_0c9b97578936234ae903368ee1de0089);
+        
+    
+        var popup_f78d1bb1d8031986008f1e9458ca7d40 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_30e4b20f229182ec95e20e346d1ef485 = $(`<div id="html_30e4b20f229182ec95e20e346d1ef485" style="width: 100.0%; height: 100.0%;">Tipo de Lixo Detectado: Garrafa Plástica Transparente</div>`)[0];
+                popup_f78d1bb1d8031986008f1e9458ca7d40.setContent(html_30e4b20f229182ec95e20e346d1ef485);
+            
+        
+
+        marker_350c288ff6941974318e8e802ce078b5.bindPopup(popup_f78d1bb1d8031986008f1e9458ca7d40)
+        ;
+
+        
+    
+    
+            var marker_6c7e735aaee2dea6465a8afa20c5cf8c = L.marker(
+                [-1.4678892, -48.4580895],
+                {
+}
+            ).addTo(map_0c9b97578936234ae903368ee1de0089);
+        
+    
+        var popup_636abe200f0a2f023a7c47bf129efe72 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b47dc0da9f17580acc39ac4c0b44de68 = $(`<div id="html_b47dc0da9f17580acc39ac4c0b44de68" style="width: 100.0%; height: 100.0%;">Tipo de Lixo Detectado: Tampa de Garrafa Plástica</div>`)[0];
+                popup_636abe200f0a2f023a7c47bf129efe72.setContent(html_b47dc0da9f17580acc39ac4c0b44de68);
+            
+        
+
+        marker_6c7e735aaee2dea6465a8afa20c5cf8c.bindPopup(popup_636abe200f0a2f023a7c47bf129efe72)
+        ;
+
+        
+    
+    
+            var marker_3fd585587664dd89779bff10dedb75e8 = L.marker(
+                [-1.4678892, -48.4580895],
+                {
+}
+            ).addTo(map_0c9b97578936234ae903368ee1de0089);
+        
+    
+        var popup_fa4b12194e7b3f4304d414e01caec167 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9efb8bb161feb53cf023424af0d52bbb = $(`<div id="html_9efb8bb161feb53cf023424af0d52bbb" style="width: 100.0%; height: 100.0%;">Tipo de Lixo Detectado: Tampa de Garrafa Plástica</div>`)[0];
+                popup_fa4b12194e7b3f4304d414e01caec167.setContent(html_9efb8bb161feb53cf023424af0d52bbb);
+            
+        
+
+        marker_3fd585587664dd89779bff10dedb75e8.bindPopup(popup_fa4b12194e7b3f4304d414e01caec167)
+        ;
+
+        
+    
+    
+            var marker_4782c84adf8a45270f3e1edc5ca6d4b0 = L.marker(
+                [-1.4679409, -48.4580422],
+                {
+}
+            ).addTo(map_0c9b97578936234ae903368ee1de0089);
+        
+    
+        var popup_483b802313637d8281a4f8fcece03d8d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_80840de5d4097af2e406241602cf97d4 = $(`<div id="html_80840de5d4097af2e406241602cf97d4" style="width: 100.0%; height: 100.0%;">Tipo de Lixo Detectado: Sacola de Uso Único</div>`)[0];
+                popup_483b802313637d8281a4f8fcece03d8d.setContent(html_80840de5d4097af2e406241602cf97d4);
+            
+        
+
+        marker_4782c84adf8a45270f3e1edc5ca6d4b0.bindPopup(popup_483b802313637d8281a4f8fcece03d8d)
+        ;
+
+        
+    
+    
+            var marker_fc9b7da1ad2ad0a6a5f14076b2009708 = L.marker(
+                [-1.4679409, -48.4580422],
+                {
+}
+            ).addTo(map_0c9b97578936234ae903368ee1de0089);
+        
+    
+        var popup_f33752e2ba1e9a81881d7deb448aee08 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bda5cb51eaee5015962a9e886ec5af8d = $(`<div id="html_bda5cb51eaee5015962a9e886ec5af8d" style="width: 100.0%; height: 100.0%;">Tipo de Lixo Detectado: Sacola de Uso Único</div>`)[0];
+                popup_f33752e2ba1e9a81881d7deb448aee08.setContent(html_bda5cb51eaee5015962a9e886ec5af8d);
+            
+        
+
+        marker_fc9b7da1ad2ad0a6a5f14076b2009708.bindPopup(popup_f33752e2ba1e9a81881d7deb448aee08)
+        ;
+
+        
+    
+    
+            var marker_927de3bd823c612fad27c21118796044 = L.marker(
+                [-1.4679409, -48.4580422],
+                {
+}
+            ).addTo(map_0c9b97578936234ae903368ee1de0089);
+        
+    
+        var popup_a2e1323e1067466de3d6efdb92ff6478 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_75478045dbab8e8b7ee7a43c27ddb437 = $(`<div id="html_75478045dbab8e8b7ee7a43c27ddb437" style="width: 100.0%; height: 100.0%;">Tipo de Lixo Detectado: Sacola de Uso Único</div>`)[0];
+                popup_a2e1323e1067466de3d6efdb92ff6478.setContent(html_75478045dbab8e8b7ee7a43c27ddb437);
+            
+        
+
+        marker_927de3bd823c612fad27c21118796044.bindPopup(popup_a2e1323e1067466de3d6efdb92ff6478)
+        ;
+
+        
+    
+    
+            var marker_a57f0997884017a9c473420f0b225764 = L.marker(
+                [-1.4679409, -48.4580422],
+                {
+}
+            ).addTo(map_0c9b97578936234ae903368ee1de0089);
+        
+    
+        var popup_5dc2ba74192cb293edc4e59ee7e1c680 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3d417809e0a9e4b08781c1b561036501 = $(`<div id="html_3d417809e0a9e4b08781c1b561036501" style="width: 100.0%; height: 100.0%;">Tipo de Lixo Detectado: Lixo Sem Rótulo</div>`)[0];
+                popup_5dc2ba74192cb293edc4e59ee7e1c680.setContent(html_3d417809e0a9e4b08781c1b561036501);
+            
+        
+
+        marker_a57f0997884017a9c473420f0b225764.bindPopup(popup_5dc2ba74192cb293edc4e59ee7e1c680)
+        ;
+
+        
+    
+    
+            var marker_7732023363bf745b895dba47f829f7a8 = L.marker(
+                [-1.4677813, -48.458171],
+                {
+}
+            ).addTo(map_0c9b97578936234ae903368ee1de0089);
+        
+    
+        var popup_bc1250ea25341abb9de35ecf91f86cdc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c45e25907213ff60915b7e1aa7b4f3bf = $(`<div id="html_c45e25907213ff60915b7e1aa7b4f3bf" style="width: 100.0%; height: 100.0%;">Tipo de Lixo Detectado: Garrafa Plástica Transparente</div>`)[0];
+                popup_bc1250ea25341abb9de35ecf91f86cdc.setContent(html_c45e25907213ff60915b7e1aa7b4f3bf);
+            
+        
+
+        marker_7732023363bf745b895dba47f829f7a8.bindPopup(popup_bc1250ea25341abb9de35ecf91f86cdc)
+        ;
+
+        
+    
+    
+            var marker_d7212183602ebd2283f4ef7fdd7c10bb = L.marker(
+                [-1.4677813, -48.458171],
+                {
+}
+            ).addTo(map_0c9b97578936234ae903368ee1de0089);
+        
+    
+        var popup_51c875c9fca36d77b6184ebe670c4609 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8a679cbe3a8b11591e296a0069226155 = $(`<div id="html_8a679cbe3a8b11591e296a0069226155" style="width: 100.0%; height: 100.0%;">Tipo de Lixo Detectado: Garrafa Plástica Transparente</div>`)[0];
+                popup_51c875c9fca36d77b6184ebe670c4609.setContent(html_8a679cbe3a8b11591e296a0069226155);
+            
+        
+
+        marker_d7212183602ebd2283f4ef7fdd7c10bb.bindPopup(popup_51c875c9fca36d77b6184ebe670c4609)
+        ;
+
+        
+    
+    
+            var marker_e6c81fc78a74224570ce7eb34384a909 = L.marker(
+                [-1.4677813, -48.458171],
+                {
+}
+            ).addTo(map_0c9b97578936234ae903368ee1de0089);
+        
+    
+        var popup_0f683f4a98d54def475b4039279d8fe2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f88ac1f797db17143aeb78028e4baa21 = $(`<div id="html_f88ac1f797db17143aeb78028e4baa21" style="width: 100.0%; height: 100.0%;">Tipo de Lixo Detectado: Garrafa Plástica Transparente</div>`)[0];
+                popup_0f683f4a98d54def475b4039279d8fe2.setContent(html_f88ac1f797db17143aeb78028e4baa21);
+            
+        
+
+        marker_e6c81fc78a74224570ce7eb34384a909.bindPopup(popup_0f683f4a98d54def475b4039279d8fe2)
+        ;
+
+        
+    
+    
+            var marker_02d79e03bd3c754817564ac227a9f803 = L.marker(
+                [-1.4678565, -48.4581022],
+                {
+}
+            ).addTo(map_0c9b97578936234ae903368ee1de0089);
+        
+    
+        var popup_d09a07ce3bca4b31afa0a7a1ef869a79 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_df2046b684e78ee54cd1030f01cc5c0b = $(`<div id="html_df2046b684e78ee54cd1030f01cc5c0b" style="width: 100.0%; height: 100.0%;">Tipo de Lixo Detectado: Garrafa Plástica Transparente</div>`)[0];
+                popup_d09a07ce3bca4b31afa0a7a1ef869a79.setContent(html_df2046b684e78ee54cd1030f01cc5c0b);
+            
+        
+
+        marker_02d79e03bd3c754817564ac227a9f803.bindPopup(popup_d09a07ce3bca4b31afa0a7a1ef869a79)
+        ;
+
+        
+    
+    
+            var marker_e527bd8c2444d3ee28dcd409e4eeb186 = L.marker(
+                [-1.4678892, -48.4580895],
+                {
+}
+            ).addTo(map_0c9b97578936234ae903368ee1de0089);
+        
+    
+        var popup_791a683e90ac2bce942e41ebd775701f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a41609219fabf6314b353daeac76cb47 = $(`<div id="html_a41609219fabf6314b353daeac76cb47" style="width: 100.0%; height: 100.0%;">Tipo de Lixo Detectado: Lata de Bebida</div>`)[0];
+                popup_791a683e90ac2bce942e41ebd775701f.setContent(html_a41609219fabf6314b353daeac76cb47);
+            
+        
+
+        marker_e527bd8c2444d3ee28dcd409e4eeb186.bindPopup(popup_791a683e90ac2bce942e41ebd775701f)
+        ;
+
+        
+    
+    
+            var marker_45e0f8a38bad399c8db7c7ed7c7bdf07 = L.marker(
+                [-1.4678892, -48.4580895],
+                {
+}
+            ).addTo(map_0c9b97578936234ae903368ee1de0089);
+        
+    
+        var popup_4145cd6f19ad913e5cfadc2faa56721b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_32350e7fae20c1e84e38741f880c5b3a = $(`<div id="html_32350e7fae20c1e84e38741f880c5b3a" style="width: 100.0%; height: 100.0%;">Tipo de Lixo Detectado: Garrafa Plástica Transparente</div>`)[0];
+                popup_4145cd6f19ad913e5cfadc2faa56721b.setContent(html_32350e7fae20c1e84e38741f880c5b3a);
+            
+        
+
+        marker_45e0f8a38bad399c8db7c7ed7c7bdf07.bindPopup(popup_4145cd6f19ad913e5cfadc2faa56721b)
+        ;
+
+        
+    
+    
+            var marker_60a20af2e2c64749dd27ab1ad0e399cc = L.marker(
+                [-1.4678892, -48.4580895],
+                {
+}
+            ).addTo(map_0c9b97578936234ae903368ee1de0089);
+        
+    
+        var popup_f58806e9c6f36a158d3244c3aece3f94 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3414d679d1d9d1d321cda4ff9281b22e = $(`<div id="html_3414d679d1d9d1d321cda4ff9281b22e" style="width: 100.0%; height: 100.0%;">Tipo de Lixo Detectado: Tampa de Garrafa Plástica</div>`)[0];
+                popup_f58806e9c6f36a158d3244c3aece3f94.setContent(html_3414d679d1d9d1d321cda4ff9281b22e);
+            
+        
+
+        marker_60a20af2e2c64749dd27ab1ad0e399cc.bindPopup(popup_f58806e9c6f36a158d3244c3aece3f94)
+        ;
+
+        
+    
+    
+            var marker_757e58ba00fc3e002bcdc7a45e3fad7d = L.marker(
+                [-1.4678892, -48.4580895],
+                {
+}
+            ).addTo(map_0c9b97578936234ae903368ee1de0089);
+        
+    
+        var popup_e5da8a5d4e39de1dc3ab3ec4a710e3d4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2a93ef150b1843efbb5bd27daf2ffa87 = $(`<div id="html_2a93ef150b1843efbb5bd27daf2ffa87" style="width: 100.0%; height: 100.0%;">Tipo de Lixo Detectado: Tampa de Garrafa Plástica</div>`)[0];
+                popup_e5da8a5d4e39de1dc3ab3ec4a710e3d4.setContent(html_2a93ef150b1843efbb5bd27daf2ffa87);
+            
+        
+
+        marker_757e58ba00fc3e002bcdc7a45e3fad7d.bindPopup(popup_e5da8a5d4e39de1dc3ab3ec4a710e3d4)
+        ;
+
+        
+    
+    
+            var marker_3b6e5d6f87e85b9382e80c68c312f09b = L.marker(
+                [-1.4678892, -48.4580895],
+                {
+}
+            ).addTo(map_0c9b97578936234ae903368ee1de0089);
+        
+    
+        var popup_d99d12816ae7a118c3937a80fe29518f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2c0be58a7fed13f241b0a88bee5225e7 = $(`<div id="html_2c0be58a7fed13f241b0a88bee5225e7" style="width: 100.0%; height: 100.0%;">Tipo de Lixo Detectado: Garrafa Plástica Transparente</div>`)[0];
+                popup_d99d12816ae7a118c3937a80fe29518f.setContent(html_2c0be58a7fed13f241b0a88bee5225e7);
+            
+        
+
+        marker_3b6e5d6f87e85b9382e80c68c312f09b.bindPopup(popup_d99d12816ae7a118c3937a80fe29518f)
+        ;
+
+        
+    
+    
+            var marker_a6cc62e96c371f42f2a161a27d119791 = L.marker(
+                [-1.4678892, -48.4580895],
+                {
+}
+            ).addTo(map_0c9b97578936234ae903368ee1de0089);
+        
+    
+        var popup_24df0dd15ef236185fc8269eaa900a77 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2eca2f83bcff56ccf9e671bd46114d64 = $(`<div id="html_2eca2f83bcff56ccf9e671bd46114d64" style="width: 100.0%; height: 100.0%;">Tipo de Lixo Detectado: Tampa de Garrafa Plástica</div>`)[0];
+                popup_24df0dd15ef236185fc8269eaa900a77.setContent(html_2eca2f83bcff56ccf9e671bd46114d64);
+            
+        
+
+        marker_a6cc62e96c371f42f2a161a27d119791.bindPopup(popup_24df0dd15ef236185fc8269eaa900a77)
+        ;
+
+        
+    
+    
+            var marker_dca83b20742b3095b730f8250998854e = L.marker(
+                [-1.4678892, -48.4580895],
+                {
+}
+            ).addTo(map_0c9b97578936234ae903368ee1de0089);
+        
+    
+        var popup_61081ccddc964fb7351457861a9ef7dd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f2eccb76db3b9e14244e00d1b62fe766 = $(`<div id="html_f2eccb76db3b9e14244e00d1b62fe766" style="width: 100.0%; height: 100.0%;">Tipo de Lixo Detectado: Tampa de Garrafa Plástica</div>`)[0];
+                popup_61081ccddc964fb7351457861a9ef7dd.setContent(html_f2eccb76db3b9e14244e00d1b62fe766);
+            
+        
+
+        marker_dca83b20742b3095b730f8250998854e.bindPopup(popup_61081ccddc964fb7351457861a9ef7dd)
+        ;
+
+        
+    
+    
+            var marker_e699621a9fccbb50244432f03a5c27a0 = L.marker(
+                [-1.4678548, -48.4581167],
+                {
+}
+            ).addTo(map_0c9b97578936234ae903368ee1de0089);
+        
+    
+        var popup_41ea0c0c6e764b463b33757e9127c31d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5108c47571a13eb8023f1ad6cb820982 = $(`<div id="html_5108c47571a13eb8023f1ad6cb820982" style="width: 100.0%; height: 100.0%;">Tipo de Lixo Detectado: Garrafa Plástica Transparente</div>`)[0];
+                popup_41ea0c0c6e764b463b33757e9127c31d.setContent(html_5108c47571a13eb8023f1ad6cb820982);
+            
+        
+
+        marker_e699621a9fccbb50244432f03a5c27a0.bindPopup(popup_41ea0c0c6e764b463b33757e9127c31d)
+        ;
+
+        
+    
+    
+            var marker_be8bfbe96f8754414066025bd1b5da89 = L.marker(
+                [-1.4678548, -48.4581167],
+                {
+}
+            ).addTo(map_0c9b97578936234ae903368ee1de0089);
+        
+    
+        var popup_1c5b8f76f2e029b3b215a23ee9190c92 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_028393a633be42a39e523b703b99db21 = $(`<div id="html_028393a633be42a39e523b703b99db21" style="width: 100.0%; height: 100.0%;">Tipo de Lixo Detectado: Cigarro</div>`)[0];
+                popup_1c5b8f76f2e029b3b215a23ee9190c92.setContent(html_028393a633be42a39e523b703b99db21);
+            
+        
+
+        marker_be8bfbe96f8754414066025bd1b5da89.bindPopup(popup_1c5b8f76f2e029b3b215a23ee9190c92)
+        ;
+
+        
+    
+    
+            var marker_d8e069e332c2c5f0792c9fc470bf6619 = L.marker(
+                [-1.4679409, -48.4580422],
+                {
+}
+            ).addTo(map_0c9b97578936234ae903368ee1de0089);
+        
+    
+        var popup_245c1ad379628edd2089af988aecb9be = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ce21cd318a8a2447e521870ff3dd5a53 = $(`<div id="html_ce21cd318a8a2447e521870ff3dd5a53" style="width: 100.0%; height: 100.0%;">Tipo de Lixo Detectado: Sacola de Uso Único</div>`)[0];
+                popup_245c1ad379628edd2089af988aecb9be.setContent(html_ce21cd318a8a2447e521870ff3dd5a53);
+            
+        
+
+        marker_d8e069e332c2c5f0792c9fc470bf6619.bindPopup(popup_245c1ad379628edd2089af988aecb9be)
+        ;
+
+        
+    
+    
+            var marker_611be3a15a6d18320a9244c07adf5c62 = L.marker(
+                [-1.4679409, -48.4580422],
+                {
+}
+            ).addTo(map_0c9b97578936234ae903368ee1de0089);
+        
+    
+        var popup_dee8c795913c270b0192238e432fcf59 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_89714f5559fdef1bbfc2181d9e6122b7 = $(`<div id="html_89714f5559fdef1bbfc2181d9e6122b7" style="width: 100.0%; height: 100.0%;">Tipo de Lixo Detectado: Sacola de Uso Único</div>`)[0];
+                popup_dee8c795913c270b0192238e432fcf59.setContent(html_89714f5559fdef1bbfc2181d9e6122b7);
+            
+        
+
+        marker_611be3a15a6d18320a9244c07adf5c62.bindPopup(popup_dee8c795913c270b0192238e432fcf59)
+        ;
+
+        
+    
+    
+            var marker_f1a38604d7cb4f3063e3988fbcb6c801 = L.marker(
+                [-1.4679409, -48.4580422],
+                {
+}
+            ).addTo(map_0c9b97578936234ae903368ee1de0089);
+        
+    
+        var popup_106c6525e00773bdbbd0847f9ebfc324 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b0dd88e797efb53b7ee8b487ccd7c38c = $(`<div id="html_b0dd88e797efb53b7ee8b487ccd7c38c" style="width: 100.0%; height: 100.0%;">Tipo de Lixo Detectado: Sacola de Uso Único</div>`)[0];
+                popup_106c6525e00773bdbbd0847f9ebfc324.setContent(html_b0dd88e797efb53b7ee8b487ccd7c38c);
+            
+        
+
+        marker_f1a38604d7cb4f3063e3988fbcb6c801.bindPopup(popup_106c6525e00773bdbbd0847f9ebfc324)
+        ;
+
+        
+    
+    
+            var marker_1f31c5cbf0574765c99f76ee3e4df54a = L.marker(
+                [-1.4679409, -48.4580422],
+                {
+}
+            ).addTo(map_0c9b97578936234ae903368ee1de0089);
+        
+    
+        var popup_03bb47934a2ffbc19e0142a0e7935eca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_29c4183791b35fd8b6d91e14e02d8bd8 = $(`<div id="html_29c4183791b35fd8b6d91e14e02d8bd8" style="width: 100.0%; height: 100.0%;">Tipo de Lixo Detectado: Lixo Sem Rótulo</div>`)[0];
+                popup_03bb47934a2ffbc19e0142a0e7935eca.setContent(html_29c4183791b35fd8b6d91e14e02d8bd8);
+            
+        
+
+        marker_1f31c5cbf0574765c99f76ee3e4df54a.bindPopup(popup_03bb47934a2ffbc19e0142a0e7935eca)
+        ;
+
+        
+    
+    
+            var marker_ec496ab411fb6fd73387bc1345362a53 = L.marker(
+                [-1.4678548, -48.4581167],
+                {
+}
+            ).addTo(map_0c9b97578936234ae903368ee1de0089);
+        
+    
+        var popup_7a858033d92ed1c057c536377e55e910 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9e896d6631f025efae2f8cf1efde2a99 = $(`<div id="html_9e896d6631f025efae2f8cf1efde2a99" style="width: 100.0%; height: 100.0%;">Tipo de Lixo Detectado: Garrafa Plástica Transparente</div>`)[0];
+                popup_7a858033d92ed1c057c536377e55e910.setContent(html_9e896d6631f025efae2f8cf1efde2a99);
+            
+        
+
+        marker_ec496ab411fb6fd73387bc1345362a53.bindPopup(popup_7a858033d92ed1c057c536377e55e910)
+        ;
+
+        
+    
+    
+            var marker_3c833f0581a78b218176d937254cd936 = L.marker(
+                [-1.4678548, -48.4581167],
+                {
+}
+            ).addTo(map_0c9b97578936234ae903368ee1de0089);
+        
+    
+        var popup_7db3e0ecaf3cddf1c1c3d1eeee3e08dd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a4df47637b6f16665d5dc6bf9f41913b = $(`<div id="html_a4df47637b6f16665d5dc6bf9f41913b" style="width: 100.0%; height: 100.0%;">Tipo de Lixo Detectado: Cigarro</div>`)[0];
+                popup_7db3e0ecaf3cddf1c1c3d1eeee3e08dd.setContent(html_a4df47637b6f16665d5dc6bf9f41913b);
+            
+        
+
+        marker_3c833f0581a78b218176d937254cd936.bindPopup(popup_7db3e0ecaf3cddf1c1c3d1eeee3e08dd)
+        ;
+
+        
+    
+    
+            var marker_e438c462363047acf5cc4b5d1a3e249a = L.marker(
+                [-1.4678729, -48.4581068],
+                {
+}
+            ).addTo(map_0c9b97578936234ae903368ee1de0089);
+        
+    
+        var popup_7bfe2693815dddfd53b466d3e8aef72e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ca76b13fbefde5a2d35222a2ac02dd8b = $(`<div id="html_ca76b13fbefde5a2d35222a2ac02dd8b" style="width: 100.0%; height: 100.0%;">Tipo de Lixo Detectado: Lata de Bebida</div>`)[0];
+                popup_7bfe2693815dddfd53b466d3e8aef72e.setContent(html_ca76b13fbefde5a2d35222a2ac02dd8b);
+            
+        
+
+        marker_e438c462363047acf5cc4b5d1a3e249a.bindPopup(popup_7bfe2693815dddfd53b466d3e8aef72e)
+        ;
+
+        
+    
+    
+            var marker_8506c0e715a589a2c9cd116ace9f75ca = L.marker(
+                [-1.4678729, -48.4581068],
+                {
+}
+            ).addTo(map_0c9b97578936234ae903368ee1de0089);
+        
+    
+        var popup_fb520b7060ffd00af87c55888b2141a8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b5ed8a2df36d5ace47f53227a7b7ddc5 = $(`<div id="html_b5ed8a2df36d5ace47f53227a7b7ddc5" style="width: 100.0%; height: 100.0%;">Tipo de Lixo Detectado: Lata de Bebida</div>`)[0];
+                popup_fb520b7060ffd00af87c55888b2141a8.setContent(html_b5ed8a2df36d5ace47f53227a7b7ddc5);
+            
+        
+
+        marker_8506c0e715a589a2c9cd116ace9f75ca.bindPopup(popup_fb520b7060ffd00af87c55888b2141a8)
+        ;
+
+        
+    
+    
+            var marker_209e09ae456def72d0c09309afaccf40 = L.marker(
+                [-1.4678729, -48.4581068],
+                {
+}
+            ).addTo(map_0c9b97578936234ae903368ee1de0089);
+        
+    
+        var popup_9420cdbc2e0e3bbccc5e9238a68c5dbe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6f14e4dbc2aa98fc991d4062af4a1119 = $(`<div id="html_6f14e4dbc2aa98fc991d4062af4a1119" style="width: 100.0%; height: 100.0%;">Tipo de Lixo Detectado: Copo Plástico Descartável</div>`)[0];
+                popup_9420cdbc2e0e3bbccc5e9238a68c5dbe.setContent(html_6f14e4dbc2aa98fc991d4062af4a1119);
+            
+        
+
+        marker_209e09ae456def72d0c09309afaccf40.bindPopup(popup_9420cdbc2e0e3bbccc5e9238a68c5dbe)
+        ;
+
+        
+    
+    
+            var marker_83536ca223252b2a412f53519d642b89 = L.marker(
+                [-1.4678729, -48.4581068],
+                {
+}
+            ).addTo(map_0c9b97578936234ae903368ee1de0089);
+        
+    
+        var popup_36beee730ab0ee9107c75cd72e2b7d90 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c67b38b9a431d85017c3cb68ea8d381f = $(`<div id="html_c67b38b9a431d85017c3cb68ea8d381f" style="width: 100.0%; height: 100.0%;">Tipo de Lixo Detectado: Lata de Bebida</div>`)[0];
+                popup_36beee730ab0ee9107c75cd72e2b7d90.setContent(html_c67b38b9a431d85017c3cb68ea8d381f);
+            
+        
+
+        marker_83536ca223252b2a412f53519d642b89.bindPopup(popup_36beee730ab0ee9107c75cd72e2b7d90)
+        ;
+
+        
+    
+    
+            var marker_a171fd9335357c8fb1785ee16fe3da3d = L.marker(
+                [-1.4678729, -48.4581068],
+                {
+}
+            ).addTo(map_0c9b97578936234ae903368ee1de0089);
+        
+    
+        var popup_dc5fcd51ceeaadde9d0081f0aeb73f15 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ea20fccb12952712ccd90ac5198ff0dd = $(`<div id="html_ea20fccb12952712ccd90ac5198ff0dd" style="width: 100.0%; height: 100.0%;">Tipo de Lixo Detectado: Lata de Bebida</div>`)[0];
+                popup_dc5fcd51ceeaadde9d0081f0aeb73f15.setContent(html_ea20fccb12952712ccd90ac5198ff0dd);
+            
+        
+
+        marker_a171fd9335357c8fb1785ee16fe3da3d.bindPopup(popup_dc5fcd51ceeaadde9d0081f0aeb73f15)
+        ;
+
+        
+    
+    
+            var marker_b8ee0ea11c8ddd7bd86aa5416dd19a83 = L.marker(
+                [-1.4678729, -48.4581068],
+                {
+}
+            ).addTo(map_0c9b97578936234ae903368ee1de0089);
+        
+    
+        var popup_0182d5fe1854baefdc952e46808c59f5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6491c38d9a3bab2c06629598abbbfd62 = $(`<div id="html_6491c38d9a3bab2c06629598abbbfd62" style="width: 100.0%; height: 100.0%;">Tipo de Lixo Detectado: Lata de Bebida</div>`)[0];
+                popup_0182d5fe1854baefdc952e46808c59f5.setContent(html_6491c38d9a3bab2c06629598abbbfd62);
+            
+        
+
+        marker_b8ee0ea11c8ddd7bd86aa5416dd19a83.bindPopup(popup_0182d5fe1854baefdc952e46808c59f5)
+        ;
+
+        
+    
+    
+            var marker_ca91d49d00b9256e439f05ddbe60e963 = L.marker(
+                [-1.4678729, -48.4581068],
+                {
+}
+            ).addTo(map_0c9b97578936234ae903368ee1de0089);
+        
+    
+        var popup_3ce767206568e4855dcb83e68f9af19d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0eaa4d716ee90754060fbf269a8b1dc1 = $(`<div id="html_0eaa4d716ee90754060fbf269a8b1dc1" style="width: 100.0%; height: 100.0%;">Tipo de Lixo Detectado: Lata de Bebida</div>`)[0];
+                popup_3ce767206568e4855dcb83e68f9af19d.setContent(html_0eaa4d716ee90754060fbf269a8b1dc1);
+            
+        
+
+        marker_ca91d49d00b9256e439f05ddbe60e963.bindPopup(popup_3ce767206568e4855dcb83e68f9af19d)
+        ;
+
+        
+    
+    
+            var marker_003a0c8fed7aaaf6d3319db5bd74ccdc = L.marker(
+                [-1.4678729, -48.4581068],
+                {
+}
+            ).addTo(map_0c9b97578936234ae903368ee1de0089);
+        
+    
+        var popup_87cbb9960dfb36186b03e2c1d66633ab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0b28a1263666e2fa64577bc1d84b1f3d = $(`<div id="html_0b28a1263666e2fa64577bc1d84b1f3d" style="width: 100.0%; height: 100.0%;">Tipo de Lixo Detectado: Copo Plástico Descartável</div>`)[0];
+                popup_87cbb9960dfb36186b03e2c1d66633ab.setContent(html_0b28a1263666e2fa64577bc1d84b1f3d);
+            
+        
+
+        marker_003a0c8fed7aaaf6d3319db5bd74ccdc.bindPopup(popup_87cbb9960dfb36186b03e2c1d66633ab)
+        ;
+
+        
+    
+    
+            var marker_4d9239f1b84686b6f5f0e3315fc50756 = L.marker(
+                [-1.4678729, -48.4581068],
+                {
+}
+            ).addTo(map_0c9b97578936234ae903368ee1de0089);
+        
+    
+        var popup_6b4904d2976201873c2d32f1f904d574 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_65d4a8c6b835aabb19bb7e8cf4ef7796 = $(`<div id="html_65d4a8c6b835aabb19bb7e8cf4ef7796" style="width: 100.0%; height: 100.0%;">Tipo de Lixo Detectado: Lata de Bebida</div>`)[0];
+                popup_6b4904d2976201873c2d32f1f904d574.setContent(html_65d4a8c6b835aabb19bb7e8cf4ef7796);
+            
+        
+
+        marker_4d9239f1b84686b6f5f0e3315fc50756.bindPopup(popup_6b4904d2976201873c2d32f1f904d574)
+        ;
+
+        
+    
+    
+            var marker_db61559dc4b8578f583a0a802b466c15 = L.marker(
+                [-1.4678729, -48.4581068],
+                {
+}
+            ).addTo(map_0c9b97578936234ae903368ee1de0089);
+        
+    
+        var popup_8161deafb6dc685fe588ea74331b90a3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e514f3afa5d53a8df64e424cb80033ab = $(`<div id="html_e514f3afa5d53a8df64e424cb80033ab" style="width: 100.0%; height: 100.0%;">Tipo de Lixo Detectado: Lata de Bebida</div>`)[0];
+                popup_8161deafb6dc685fe588ea74331b90a3.setContent(html_e514f3afa5d53a8df64e424cb80033ab);
+            
+        
+
+        marker_db61559dc4b8578f583a0a802b466c15.bindPopup(popup_8161deafb6dc685fe588ea74331b90a3)
+        ;
+
+        
+    
+    
+            var marker_041ccf262f6d90e9212d1b9123096a84 = L.marker(
+                [-1.4677813, -48.458171],
+                {
+}
+            ).addTo(map_0c9b97578936234ae903368ee1de0089);
+        
+    
+        var popup_a70adaab713bb450f7de612e942abfa6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e84bba19f2ac55996be79598789eebdb = $(`<div id="html_e84bba19f2ac55996be79598789eebdb" style="width: 100.0%; height: 100.0%;">Tipo de Lixo Detectado: Garrafa Plástica Transparente</div>`)[0];
+                popup_a70adaab713bb450f7de612e942abfa6.setContent(html_e84bba19f2ac55996be79598789eebdb);
+            
+        
+
+        marker_041ccf262f6d90e9212d1b9123096a84.bindPopup(popup_a70adaab713bb450f7de612e942abfa6)
+        ;
+
+        
+    
+    
+            var marker_504c5ab8dc2089dd061cd4e863324cb3 = L.marker(
+                [-1.4677813, -48.458171],
+                {
+}
+            ).addTo(map_0c9b97578936234ae903368ee1de0089);
+        
+    
+        var popup_040f9e27aaf2d8ab5b4144dff11947ac = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_00418431f282f43c714a45b3200e84e4 = $(`<div id="html_00418431f282f43c714a45b3200e84e4" style="width: 100.0%; height: 100.0%;">Tipo de Lixo Detectado: Garrafa Plástica Transparente</div>`)[0];
+                popup_040f9e27aaf2d8ab5b4144dff11947ac.setContent(html_00418431f282f43c714a45b3200e84e4);
+            
+        
+
+        marker_504c5ab8dc2089dd061cd4e863324cb3.bindPopup(popup_040f9e27aaf2d8ab5b4144dff11947ac)
+        ;
+
+        
+    
+    
+            var marker_bff551cb1fa0225817e2c4b1ac8aed8a = L.marker(
+                [-1.4677813, -48.458171],
+                {
+}
+            ).addTo(map_0c9b97578936234ae903368ee1de0089);
+        
+    
+        var popup_aa5a9cc06af21f12f553949633152636 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c8ec753e14729e773c8f62d9c2b5033c = $(`<div id="html_c8ec753e14729e773c8f62d9c2b5033c" style="width: 100.0%; height: 100.0%;">Tipo de Lixo Detectado: Garrafa Plástica Transparente</div>`)[0];
+                popup_aa5a9cc06af21f12f553949633152636.setContent(html_c8ec753e14729e773c8f62d9c2b5033c);
+            
+        
+
+        marker_bff551cb1fa0225817e2c4b1ac8aed8a.bindPopup(popup_aa5a9cc06af21f12f553949633152636)
+        ;
+
+        
+    
+    
+            var marker_e58aff5cc215555b4559512db210bec9 = L.marker(
+                [-1.4680284, -48.4580403],
+                {
+}
+            ).addTo(map_0c9b97578936234ae903368ee1de0089);
+        
+    
+        var popup_0ca8350587a175fba54d75393eb7cc2b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5714d37443c993d2c2b9107a38b0c22f = $(`<div id="html_5714d37443c993d2c2b9107a38b0c22f" style="width: 100.0%; height: 100.0%;">Tipo de Lixo Detectado: Garrafa Plástica Transparente</div>`)[0];
+                popup_0ca8350587a175fba54d75393eb7cc2b.setContent(html_5714d37443c993d2c2b9107a38b0c22f);
+            
+        
+
+        marker_e58aff5cc215555b4559512db210bec9.bindPopup(popup_0ca8350587a175fba54d75393eb7cc2b)
+        ;
+
+        
+    
+    
+            var marker_dca20ca932a622ca43a6db6c953ecea1 = L.marker(
+                [-1.4680284, -48.4580403],
+                {
+}
+            ).addTo(map_0c9b97578936234ae903368ee1de0089);
+        
+    
+        var popup_e4a00530f663861aa807f27c57c54fbf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eb7477008097204c6b369e33d9d85af5 = $(`<div id="html_eb7477008097204c6b369e33d9d85af5" style="width: 100.0%; height: 100.0%;">Tipo de Lixo Detectado: Lata de Bebida</div>`)[0];
+                popup_e4a00530f663861aa807f27c57c54fbf.setContent(html_eb7477008097204c6b369e33d9d85af5);
+            
+        
+
+        marker_dca20ca932a622ca43a6db6c953ecea1.bindPopup(popup_e4a00530f663861aa807f27c57c54fbf)
+        ;
+
+        
+    
+    
+            var marker_3543391da2a1ee66d3867b74dfde9d6d = L.marker(
+                [-1.4680284, -48.4580403],
+                {
+}
+            ).addTo(map_0c9b97578936234ae903368ee1de0089);
+        
+    
+        var popup_cf532a341f01166a6d7e4d0afe09cca1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dd710e71e45ddb75124e10c5eaddf3c6 = $(`<div id="html_dd710e71e45ddb75124e10c5eaddf3c6" style="width: 100.0%; height: 100.0%;">Tipo de Lixo Detectado: Garrafa Plástica Transparente</div>`)[0];
+                popup_cf532a341f01166a6d7e4d0afe09cca1.setContent(html_dd710e71e45ddb75124e10c5eaddf3c6);
+            
+        
+
+        marker_3543391da2a1ee66d3867b74dfde9d6d.bindPopup(popup_cf532a341f01166a6d7e4d0afe09cca1)
+        ;
+
+        
+    
+    
+            var marker_bfa5ef3d0b1fb67528516583f9f4735f = L.marker(
+                [-1.4747667, -48.454126],
+                {
+}
+            ).addTo(map_0c9b97578936234ae903368ee1de0089);
+        
+    
+        var popup_361bcf8ea52a154766e4fd24253f4e25 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7e8ae5a59c86ab4b1170646ae816925c = $(`<div id="html_7e8ae5a59c86ab4b1170646ae816925c" style="width: 100.0%; height: 100.0%;">Tipo de Lixo Detectado: Papelão ondulado</div>`)[0];
+                popup_361bcf8ea52a154766e4fd24253f4e25.setContent(html_7e8ae5a59c86ab4b1170646ae816925c);
+            
+        
+
+        marker_bfa5ef3d0b1fb67528516583f9f4735f.bindPopup(popup_361bcf8ea52a154766e4fd24253f4e25)
+        ;
+
+        
+    
+    
+            var marker_5448d7d2751c9b7a8a581d90b1a046ae = L.marker(
+                [-1.4680284, -48.4580403],
+                {
+}
+            ).addTo(map_0c9b97578936234ae903368ee1de0089);
+        
+    
+        var popup_20e35366e4713734f58bf52f227748e7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4414d345b6ed858db8ddf883412a1390 = $(`<div id="html_4414d345b6ed858db8ddf883412a1390" style="width: 100.0%; height: 100.0%;">Tipo de Lixo Detectado: Garrafa Plástica Transparente</div>`)[0];
+                popup_20e35366e4713734f58bf52f227748e7.setContent(html_4414d345b6ed858db8ddf883412a1390);
+            
+        
+
+        marker_5448d7d2751c9b7a8a581d90b1a046ae.bindPopup(popup_20e35366e4713734f58bf52f227748e7)
+        ;
+
+        
+    
+    
+            var marker_b08cb34ef36863a1afb37e9337800829 = L.marker(
+                [-1.4680284, -48.4580403],
+                {
+}
+            ).addTo(map_0c9b97578936234ae903368ee1de0089);
+        
+    
+        var popup_51815cc4f29f539781f091bf1c6ddbdc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_71f1320687ecc3cb51637fd910fda789 = $(`<div id="html_71f1320687ecc3cb51637fd910fda789" style="width: 100.0%; height: 100.0%;">Tipo de Lixo Detectado: Lata de Bebida</div>`)[0];
+                popup_51815cc4f29f539781f091bf1c6ddbdc.setContent(html_71f1320687ecc3cb51637fd910fda789);
+            
+        
+
+        marker_b08cb34ef36863a1afb37e9337800829.bindPopup(popup_51815cc4f29f539781f091bf1c6ddbdc)
+        ;
+
+        
+    
+    
+            var marker_470df306d8179f74a400b12b837ad639 = L.marker(
+                [-1.4680284, -48.4580403],
+                {
+}
+            ).addTo(map_0c9b97578936234ae903368ee1de0089);
+        
+    
+        var popup_5a5c5331d0ce8baca54dfa88f7173267 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_47928a63c3ccb86eb864b2a49cc06910 = $(`<div id="html_47928a63c3ccb86eb864b2a49cc06910" style="width: 100.0%; height: 100.0%;">Tipo de Lixo Detectado: Garrafa Plástica Transparente</div>`)[0];
+                popup_5a5c5331d0ce8baca54dfa88f7173267.setContent(html_47928a63c3ccb86eb864b2a49cc06910);
+            
+        
+
+        marker_470df306d8179f74a400b12b837ad639.bindPopup(popup_5a5c5331d0ce8baca54dfa88f7173267)
+        ;
+
+        
+    
+</script>
+</html>

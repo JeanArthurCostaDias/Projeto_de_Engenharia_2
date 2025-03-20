@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados da Inferência</title>
+    <style>
+        /* Centralizar o título */
+        .titulo {
+            text-align: center;
+        }
+
+        /* Estilo para a seção do gráfico e mapa */
+        .resultado-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        /* Estilo para o gráfico */
+        .grafico {
+            flex: 1;
+            text-align: left;
+        }
+
+        /* Estilo para o mapa */
+        .mapa {
+            flex: 1;
+            text-align: right;
+        }
+
+        /* Tornar as imagens do gráfico mais flexíveis */
+        .grafico img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="titulo">
+        <h1>Resultados da Inferência</h1>
+    </div>
+
+    <div class="resultado-container">
+        <div class="grafico">
+            <h2>Distribuição das Classes Detectadas</h2>
+            <img src="{{ url_for('static', filename='grafico_classes.png') }}" alt="Gráfico das Classes">
+        </div>
+        <div class="mapa">
+            <h2>Localizações das Detecções</h2>
+            <iframe src="{{ url_for('static', filename='mapa_localidades.html') }}" width="100%" height="600"></iframe>
+        </div>
+    </div>
+
+</body>
+</html>

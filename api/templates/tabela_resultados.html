@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados da Inferência</title>
+    <style>
+        /* Estilo geral */
+        .container {
+            width: 100%;
+            padding: 20px;
+        }
+
+        .titulo {
+            text-align: center;
+        }
+        .resultado-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .grafico, .mapa {
+            flex: 1;
+        }
+
+        /* Estilo para a tabela */
+        .tabela-container {
+            flex: 1;  /* Tabela ocupa 1 parte do espaço */
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #000;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        /* Estilo para imagens */
+        .imagens-container {
+            flex: 1;  /* Imagem ocupa 1 parte do espaço */
+            padding: 20px;
+            text-align: center;
+        }
+
+        .imagem-item {
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .imagem-container {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .imagem-redimensionada {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Tamanho flexível para gráficos */
+        .grafico img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Título -->
+        <div class="titulo">
+            <h1>Resultados da Inferência</h1>
+        </div>
+
+        <!-- Gráfico e Mapa -->
+        <div class="resultado-container">
+            <div class="grafico">
+                <h2>Distribuição das Classes Detectadas</h2>
+                <img src="{{ url_for('static', filename='grafico_classes.png') }}" alt="Gráfico das Classes">
+            </div>
+            <div class="mapa">
+                <h2>Localizações das Detecções</h2>
+                <iframe src="{{ url_for('static', filename='mapa_localidades.html') }}" width="100%" height="600"></iframe>
+            </div>
+        </div>
+
+        <div class="resultado-container">
+            <!-- Tabela de Resultados -->
+            <div class="tabela-container">
+                <h2>Tabela de Resultados de Detecção</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Latitude</th>
+                            <th>Longitude</th>
+                            <th>Classe</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for item in tabela_dados %}
+                        <tr>
+                            <td>{{ item.latitude }}</td>
+                            <td>{{ item.longitude }}</td>
+                            <td>{{ item.classe }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Imagens com Detecção -->
+            <div class="imagens-container">
+                <h2>Imagens com Detecção</h2>
+
+                <!-- Imagem Exibida Inicialmente -->
+                <div class="imagem-item">
+                    <h4>Detecções: <span id="imagem-deteccoes"></span></h4>
+                    <p>Latitude: <span id="imagem-latitude"></span></p>
+                    <p>Longitude: <span id="imagem-longitude"></span></p>
+
+                    <!-- Imagem com redimensionamento -->
+                    <div class="imagem-container">
+                        <img id="imagem-exibida" src="" class="imagem-redimensionada" alt="Imagem com Detecção">
+                    </div>
+                </div>
+
+                <!-- Botões de Navegação -->
+                <div>
+                    <button onclick="mudarImagem(-1)">Anterior</button>
+                    <button onclick="mudarImagem(1)">Próxima</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        // Lista de resultados (imagens e seus dados)
+        const resultados = [
+            {% for key, info in resultados.items() %}
+            {
+                "deteccoes": "{{ info.deteccoes}}",
+                "latitude": "{{ info.latitude }}",
+                "longitude": "{{ info.longitude }}",
+                "src": "{{ url_for('static', filename='deteccao_' + key + '.jpg') }}"
+            },
+            {% endfor %}
+        ];
+
+        // Controle do índice atual da imagem
+        let indiceAtual = 0;
+
+        // Função para atualizar a imagem exibida
+        function atualizarImagem() {
+            const imagem = resultados[indiceAtual];
+            let deteccoes = imagem.deteccoes.replace(/&#39;/g, "'");
+            deteccoes = deteccoes.replace(/'/g, '"');  // Substitui aspas simples por aspas duplas
+            let deteccoesObj = JSON.parse(deteccoes);
+            let nomesClasses = deteccoesObj.map(detecao => detecao.nome_classe);
+            document.getElementById("imagem-deteccoes").textContent = nomesClasses.join(", ");
+            document.getElementById("imagem-latitude").textContent = imagem.latitude;
+            document.getElementById("imagem-longitude").textContent = imagem.longitude;
+            document.getElementById("imagem-exibida").src = imagem.src;
+        }
+
+        // Função para navegar entre as imagens
+        function mudarImagem(direcao) {
+            indiceAtual += direcao;
+
+            // Garantir que o índice não ultrapasse os limites
+            if (indiceAtual < 0) {
+                indiceAtual = 0;
+            } else if (indiceAtual >= resultados.length) {
+                indiceAtual = resultados.length - 1;
+            }
+
+            // Atualizar a imagem exibida
+            atualizarImagem();
+        }
+
+        // Inicializar com a primeira imagem
+        atualizarImagem();
+    </script>
+</body>
+</html>
