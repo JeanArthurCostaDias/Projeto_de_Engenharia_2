@@ -31,3 +31,10 @@
 - O app requer permissão para acessar a localização e os arquivos do dispositivo.
 
 - Caso a localização não seja obtida, a imagem ainda será salva, mas sem coordenadas geográficas.
+
+## Imagens de Testes
+<p align="center">
+  <img src="../imgs/img_app1.png" width="45%">
+  <img src="../imgs/img_app2.png" width="45%">
+  <img src="../imgs/img_app3.png" width="45%">
+</p>
