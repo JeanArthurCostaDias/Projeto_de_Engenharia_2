@@ -1,16 +1,33 @@
-# flaviocodigos
+#Como Usar o Aplicativo
 
-A new Flutter project.
+Abrir o App: Inicie o aplicativo no seu dispositivo ou emulador.
 
-## Getting Started
+##Capturar Imagem:
 
-This project is a starting point for a Flutter application.
+Pressione o botão "Tirar Foto" para abrir a câmera.
 
-A few resources to get you started if this is your first Flutter project:
+Pressione o botão "Escolher da Galeria" para selecionar uma imagem.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Permissões: Dê permissão para acessar a câmera e a localização do dispositivo.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+###Visualizar as Imagens:
+
+As imagens capturadas aparecerão em uma lista vertical.
+
+Toque em uma imagem para ver os detalhes e a localização onde foi tirada.
+
+Remover Imagem: Pressione o ícone de "X" vermelho na imagem para removê-la.
+
+####Fazer Upload:
+
+Pressione "Upload Todas Imagens" para enviar todas as fotos ao Firebase.
+
+A URL da imagem e a localização serão armazenadas no Firestore.
+
+#####Notas Importantes
+
+Certifique-se de que seu dispositivo tem conexão com a internet para o upload das imagens.
+
+O app requer permissão para acessar a localização e os arquivos do dispositivo.
+
+Caso a localização não seja obtida, a imagem ainda será salva, mas sem coordenadas geográficas.
