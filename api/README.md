@@ -18,7 +18,10 @@ Para iniciar o servidor, execute os seguintes comandos no terminal:
 2. **Inicie o Servidor Flask**: ```flask --app app run --debug```
 
 ## Realizando uma nova inferência
-Caso queira realizar uma nova inferência para testes, exclua o arquivo resultados_inferencia.json que está dentro da pasta /api
+Caso queira realizar uma nova inferência para testes:
+1. Exclua o arquivo resultados_inferencia.json que está dentro da pasta /api
+2. Entre na rota /inferencia
+3. O resultado obtido estará presente na rota /dashboard
 
 ## Imagens do Dashboard
 
