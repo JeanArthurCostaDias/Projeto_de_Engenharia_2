@@ -4,7 +4,7 @@ Este guia fornece instruções básicas para configurar e utilizar a API.
 
 ## Autenticação com Firebase
 
-Para autenticar com o Firebase, coloque o token privado do Firebase na pasta `/api/token`.
+Para autenticar com o Firebase, coloque o token privado .json do Firebase na pasta `/api/token`.
 
 ## Modificação do Modelo YOLO
 
