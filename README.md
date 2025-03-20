@@ -1,3 +1,5 @@
+Aplicação de Visão Computacional no Desenvolvimento de Ferramentas para a Gestão Sustentável de Resíduos Urbanos (Projeto de Engenharia 2)
+
 Alunos: 
 - Jean Dias: 202306840056
 - Miguel Ângelo: 202406840022
