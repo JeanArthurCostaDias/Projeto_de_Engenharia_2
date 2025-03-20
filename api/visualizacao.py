@@ -1,4 +1,6 @@
 import matplotlib.pyplot as plt
+import matplotlib
+matplotlib.use('Agg')
 import folium
 
 def gerar_grafico(resultados):
@@ -28,17 +30,24 @@ def gerar_grafico(resultados):
     plt.close()
 
 def gerar_mapa(resultados):
+    # Criação do mapa
     m = folium.Map(location=[-1.45502, -48.5024], zoom_start=10)
 
     for key, info in resultados.items():
         latitude, longitude = info["latitude"], info["longitude"]
-        
-        # Percorrer as detecções e adicionar um marcador para cada uma
+        classes_detectadas = []
         for deteccao in info['deteccoes']:
             nome_classe = deteccao['nome_classe']
-            popup_text = f"Tipo de Lixo Detectado: {nome_classe}"
-            
-            # Adiciona o marcador com o nome da classe
-            folium.Marker([latitude, longitude], popup=popup_text).add_to(m)
+            classes_detectadas.append(nome_classe)
+        classes_detectadas = set(classes_detectadas)
+        nome_classe = ", ".join(classes_detectadas)
+        popup_text = f"Tipo de Lixo Detectado: {nome_classe}"
+        if len(classes_detectadas) >= 1:
+            popup_text = f"Tipos de Lixo Detectados: {nome_classe}"
+            folium.Marker(
+                [latitude, longitude], 
+                popup=popup_text
+            ).add_to(m)
 
+    # Salva o mapa gerado como um arquivo HTML
     m.save("./static/mapa_localidades.html")

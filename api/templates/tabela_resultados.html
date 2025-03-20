@@ -153,12 +153,14 @@
         // Lista de resultados (imagens e seus dados)
         const resultados = [
             {% for key, info in resultados.items() %}
+            {% if info.deteccoes|length > 0 %}  // Verifica se há detecções
             {
-                "deteccoes": "{{ info.deteccoes}}",
+                "deteccoes": "{{ info.deteccoes }}",
                 "latitude": "{{ info.latitude }}",
                 "longitude": "{{ info.longitude }}",
                 "src": "{{ url_for('static', filename='deteccao_' + key + '.jpg') }}"
             },
+            {% endif %}
             {% endfor %}
         ];
 
