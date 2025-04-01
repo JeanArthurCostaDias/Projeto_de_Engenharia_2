@@ -9,6 +9,6 @@ def configurar_firebase():
     return db
 
 def carregar_modelo():
-    caminho_modelo = os.path.join(os.path.dirname(__file__),"model","modelo_yolo11.pt")
+    caminho_modelo = os.path.join(os.path.dirname(__file__),"model","modelo_yolo11_3.pt")
     model = YOLO(caminho_modelo)
     return model

@@ -1,8 +1,8 @@
 from flask import Flask, jsonify, render_template
 from firebase_admin import firestore
-from config import configurar_firebase
-from inferencia import inferir_em_imagens
-from visualizacao import gerar_grafico, gerar_mapa
+from api.config import configurar_firebase
+from api.inferencia import inferir_em_imagens
+from api.visualizacao import gerar_grafico, gerar_mapa
 import os
 import json
 

@@ -1,8 +1,8 @@
 import cv2
 import numpy as np
 import requests
-from config import carregar_modelo
-from traducao_labels import carregar_traducoes  # O arquivo labels.py será mostrado em seguida
+from api.config import carregar_modelo
+from api.traducao_labels import carregar_traducoes  # O arquivo labels.py será mostrado em seguida
 
 model = carregar_modelo()
 traducoes = carregar_traducoes()
@@ -40,7 +40,7 @@ def inferir_em_imagens(dados):
         imagem = baixar_imagem(url)
         if imagem is None:
             continue
-        imagem = cv2.resize(imagem, (640, 640))
+        imagem = cv2.resize(imagem, (1024, 1024))
         imagem_ajustada = imagem.copy()
         deteccoes = model(imagem)
 
