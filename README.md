@@ -10,8 +10,13 @@ Alunos:
 # Introdução 
 
 # Métodos usados (Linguagens de programação, bibliotecas, frameworks,...)
+1. Flutter: Foi usada a linguagem de programação Flutter para moldar a interface do aplicativo.
+2. Firebase: Foi utilizado para armazenar as imagens e registrar informações no banco de dados.
 
 # Imagens da API e do APP
+<p align="center">
+  <img src="../imgs/img_app1.png" width="45%">
+  <img src="../imgs/img_app3.png" width="45%">
 
 # Referências Bibliográficas (Link do Dataset + Citação e Yolov11)
 
