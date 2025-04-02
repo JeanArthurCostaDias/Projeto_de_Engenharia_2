@@ -8,6 +8,7 @@ Alunos:
 - Flávio Leite: 202406840019
 
 # Introdução 
+- Este projeto integra o uso de tecnologias modernas, como Flutter e Firebase, para desenvolver um aplicativo móvel que permite à população denunciar acúmulos de lixo irregulares na cidade. O sistema captura imagens dos resíduos descartados inadequadamente, utiliza modelos de aprendizado de máquina para classificar os tipos de resíduos e envia essas informações para os agentes municipais. Além disso, o aplicativo organiza e apresenta os dados de forma clara, facilitando a identificação de pontos críticos de descarte irregular e auxiliando na tomada de decisões para a gestão sustentável dos resíduos urbanos.
 
 # Métodos usados (Linguagens de programação, bibliotecas, frameworks,...)
 1. Flutter: Foi usada a linguagem de programação Flutter para moldar a interface do aplicativo.
