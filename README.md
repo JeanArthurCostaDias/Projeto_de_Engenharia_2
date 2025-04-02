@@ -7,6 +7,14 @@ Alunos:
 - Kayky Feio: 202406840021
 - Flávio Leite: 202406840019
 
+# Introdução 
+
+# Métodos usados (Linguagens de programação, bibliotecas, frameworks,...)
+
+# Imagens da API e do APP
+
+# Referências Bibliográficas (Link do Dataset + Citação e Yolov11)
+
 
 ## Checklist de coisas a serem colocadas neste readme
 
