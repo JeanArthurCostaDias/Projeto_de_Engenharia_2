@@ -16,7 +16,7 @@ Alunos:
 # Imagens da API e do APP
 <p align="center">
   <img src="imgs/img_app1.png" width="45%">
-  <img src="imgs/img_app3.pngg" width="45%">
+  <img src="imgs/img_app3.png" width="45%">
 
 # Referências Bibliográficas (Link do Dataset + Citação e Yolov11)
 
