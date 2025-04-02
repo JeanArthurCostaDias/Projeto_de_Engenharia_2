@@ -18,6 +18,8 @@ Alunos:
 <p align="center">
   <img src="imgs/img_app1.png" width="45%">
   <img src="imgs/img_app3.png" width="45%">
+  <img src="imgs/img_api_1.png" width="45%">
+  <img src="imgs/img_api_2.png" width="45%">
 
 ## Referências Bibliográficas (Link do Dataset + Citação e Yolov11)
 
