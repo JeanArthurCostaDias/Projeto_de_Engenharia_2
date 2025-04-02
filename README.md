@@ -11,8 +11,8 @@ Alunos:
 - Este projeto integra o uso de tecnologias modernas, como Flutter e Firebase, para desenvolver um aplicativo móvel que permite à população denunciar acúmulos de lixo irregulares na cidade. O sistema captura imagens dos resíduos descartados inadequadamente e utiliza modelos de aprendizado de máquina para classificar os tipos de resíduos, facilitando a identificação de pontos críticos de descarte irregular e auxiliando na tomada de decisões para a gestão sustentável dos resíduos urbanos.
 
 ## Métodos usados (Linguagens de programação, bibliotecas, frameworks,...)
-1. Flutter: Foi usada a linguagem de programação Flutter para moldar a interface do aplicativo.
-2. Firebase: Foi utilizado para armazenar as imagens e registrar informações no banco de dados.
+1. Flutter: Foi usada a linguagem de programação Flutter para moldar a interface do aplicativo;
+2. Firebase: Foi utilizado para armazenar as imagens e registrar informações no banco de dados;
 
 ## Imagens da API e do APP
 <p align="center">
